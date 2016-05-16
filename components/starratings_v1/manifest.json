@@ -1,0 +1,185 @@
+{
+  "name": "Star Ratings",
+  "type": "ci-starratings",
+  "tagName": "ci-starratings",
+  "version": 1,
+  "description": "Create Star Ratings Icons.",
+  "files": {
+    "js": [
+      "starratings_min.js"
+    ]
+  },
+  "isFixedSize": false,
+  "attributes": [
+    {
+      "name": "ratingvalue",
+      "label": "Rating Value",
+      "description": "Rating value.",
+      "type": "string",
+      "defaultValue": "0",
+      "required": true
+    },
+    {
+      "name": "iconsize",
+      "label": "Icon Size",
+      "description": "Star icon size.",
+      "type": "number",
+      "min": 5,
+      "max": 30,
+      "defaultValue": 15,
+      "required": false
+    },
+    {
+      "name": "isemptyshown",
+      "label": "Show Empty",
+      "description": "Whether the empty star icons are shown.",
+      "type": "boolean",
+      "defaultValue": true,
+      "required": false
+    },
+    {
+      "name": "isemptycolored",
+      "label": "Fill Empty",
+      "description": "Whether the empty star icons are colored.",
+      "type": "boolean",
+      "defaultValue": true,
+      "required": false
+    },
+    {
+      "name": "colorprimary",
+      "label": "Primary Color",
+      "description": "Primary fill color.",
+      "type": "color",
+      "defaultValue": "#ffcd00",
+      "required": false
+    },
+    {
+      "name": "colorsecondary",
+      "label": "Secondary Color",
+      "description": "Secondary gradient color.",
+      "type": "color",
+      "defaultValue": "#e16f00",
+      "required": false
+    },
+    {
+      "name": "gradienttype",
+      "label": "Gradient Type",
+      "description": "Gradient type.",
+      "type": "string",
+      "defaultValue": "none",
+      "gwdSpecific": {
+        "type": "dropdown",
+        "items": [
+          "linear",
+          "radial",
+          "none"
+        ]
+      },
+      "required": false
+    },
+    {
+      "name": "ratingmax",
+      "label": "Max Value",
+      "description": "Maximum star ratings.",
+      "type": "number",
+      "type": "string",
+      "defaultValue": "5",
+      "required": false
+    },
+    {
+      "name": "ratingmin",
+      "label": "Min Value",
+      "description": "Minimum star ratings.",
+      "type": "number",
+      "type": "string",
+      "defaultValue": "3",
+      "required": false
+    }
+  ],
+  "methods": [
+    {
+      "name": "setAttributes",
+      "label": "Set attributes",
+      "description": "Set the star ratings attributes as an object.",
+      "parameters": [
+        {
+          "name": "colorPrimary",
+          "label": "Primary Color",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "colorSecondary",
+          "label": "Secondary Color",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "gradientType",
+          "label": "Gradient Type",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "isEmptyColored",
+          "label": "Fill Empty",
+          "type": "boolean",
+          "optional": true
+        },
+        {
+          "name": "isEmptyShown",
+          "label": "Show Empty",
+          "type": "boolean",
+          "optional": true
+        },
+        {
+          "name": "iconSize",
+          "label": "Icon Size",
+          "type": "number",
+          "optional": true
+        },
+        {
+          "name": "ratingMax",
+          "label": "Max Value",
+          "type": "number",
+          "optional": true
+        },
+        {
+          "name": "ratingMin",
+          "label": "Min Value",
+          "type": "number",
+          "optional": true
+        },
+        {
+          "name": "ratingValue",
+          "label": "Rating Value",
+          "type": "number",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "getRatingValue",
+      "label": "Get rating value",
+      "description": "Get the validated rating value."
+    },
+    {
+      "name": "getStyleAttributes",
+      "label": "Get style attributes",
+      "description": "Get style attributes for star icons."
+    }
+  ],
+  "events": [
+    {
+      "name": "complete",
+      "label": "Star ratings created",
+      "description": "When the start ratings icons have been created."
+    },
+    {
+      "name": "validationerror",
+      "label": "Minimum greater than Maximum",
+      "description": "Star ratings minimum rating value greater than Maximum."
+    }
+  ],
+  "nestable": false
+}
