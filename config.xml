@@ -2,6 +2,7 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "no.liturgi.www"
+            <!-- no.liturgi.www for android - no.tegnliturgi.www for apple -->
         versionCode = "5" 
         version     = "2.10.0" >
 
@@ -12,11 +13,11 @@
     <description>
        Menighetens liturgiske tekster paa norsk tegnspraak
     </description>
-        
- <platform name="android">        
-    <preference name="android-minSdkVersion" value="8" />
-    <preference name="android-targetSdkVersion" value="26" />
-</platform>
+  <!-- fjern !-- for android>      
+ <!-- platform name="android">        
+    <!-- preference name="android-minSdkVersion" value="8" />
+    <!-- preference name="android-targetSdkVersion" value="26" />
+<!--/platform>
     
       <!-- iPhone 6 / 6+ -->
 <icon src="icon-60@3x.png" platform="ios" width="180" height="180" />
