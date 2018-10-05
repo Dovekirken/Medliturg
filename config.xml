@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns   = "http://www.w3.org/ns/widgets"
+<widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "no.liturgi.www"
-        versionCode = "6" 
-        version     = "2.10.1" >
+        versionCode = "7" 
+        version     = "2.10.2" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -13,8 +13,9 @@
        Menighetens liturgiske tekster paa norsk tegnspraak
     </description>
         
-  <preference name="android-minSdkVersion" value="8" />
-    <preference name="android-targetSdkVersion" value="26" />
+<preference name="android-minSdkVersion" value="8" />
+<preference name="android-targetSdkVersion" value="26" />
+
  <icon src="ldpi.png" density="ldpi" />
  <icon src="mdpi.png" density="mdpi" />
  <icon src="hdpi.png" density="hdpi" />
@@ -59,7 +60,7 @@
 <icon src="icon.png" platform="winphone" />
 <icon src="tileicon.png" platform="winphone" role="background" />
 
-    <author href="http://tegnkultur.no" email="michael.hoffmann@dovekirken.no">
+    <author href="http://tegnliturgi.no" email="michael.hoffmann@dovekirken.no">
         Michael Hoffmann 
     </author>
 
