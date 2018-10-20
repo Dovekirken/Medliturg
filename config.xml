@@ -2,8 +2,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "no.tegnliturgi.www"
-        versionCode = "9" 
-        version     = "2.10.4" >
+        versionCode = "10" 
+        version     = "2.10.5" >
 
     <!-- versionCode is optional and Android only -->
 
